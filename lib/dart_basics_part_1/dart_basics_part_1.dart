@@ -113,5 +113,7 @@ void main(List<String> arguments) {
   // List dataStrings= ['Number:1','Number:2','Number:3'];
   List dataStrings = dataNumers.map((element) => 'Number:$element').toList();
   print(dataStrings);
+  List<double>doubleNumbers=dataNumers.map((e) => double.parse('$e')).toList();
+  print(doubleNumbers);
   // List [5] , num [3] , String [5] 
 }
