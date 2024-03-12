@@ -24,7 +24,7 @@ void main() {
   // print(getFullNameWithInput('Hello', 'Dart'));
   // printName('Ali');
   // printPrice(discount: 490, price: 500, total: 500);
-
+//
 //  late int x;
 //  x=5;
 //   int? x;
