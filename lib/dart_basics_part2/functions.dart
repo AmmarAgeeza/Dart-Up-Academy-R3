@@ -43,15 +43,16 @@ void main() {
   printItemPriceWithDiscountDefault(price: 500, discount: 60);
 // int x=4;
 // int y=5;
-print(swap().num1);
-print(swap().num2);
-print(swap().sum);
+  print(swap().num1);
+  print(swap().num2);
+  print(swap().sum);
 }
+
 //record
-({int num1, int num2,int sum}) swap() {
+({int num1, int num2, int sum}) swap() {
   int x = 4;
   int y = 5;
-  return (num1:y, num2:x,sum:x+y);
+  return (num1: y, num2: x, sum: x + y);
 }
 //search for Either in dartz package.
 //bug - error
@@ -133,4 +134,20 @@ void printItemPriceWithDiscountDefault({
   int discount = 50,
 }) {
   print('Total = ${price - discount}');
+}
+
+void printFullCustomName() {
+  String fName = 'ss', lName = 's';
+  print(fName + lName);
+}
+
+void saveFullNameToDB() {
+ var data= concateFNameLName();
+ //save to DB Logic
+}
+
+String concateFNameLName() {
+  String fName = 'ss', lName = 's';
+  //
+  return fName + lName;
 }
